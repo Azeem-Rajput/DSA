@@ -10,10 +10,10 @@ int main()
     int mul=1;
     while(n>0)
     {
-        rem=n%8; // rem=n&1;
-        n=n/8; // n=n>>1;
+        rem=n%10; // rem=n&1;
+        n=n/10; // n=n>>1;
         ans+=rem*mul;
-        mul*=10;  //multiply by number in which it is in currently
+        mul*=8;  //multiply by number in which it is in currently
     }
     cout<<ans;
 }
