@@ -30,10 +30,12 @@ int main()
     int n;
     cout<<"Enter a number=";
     cin>>n;
+    cout<<"Enter an array =";
     for(int i=0;i<n;i++)
     {
         cin>>arr[i];
     }
+    cout<<"The minimum no. is=";
     cout<<smallest(arr,n);
 
 }
