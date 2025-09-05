@@ -12,7 +12,7 @@ int book(int arr[],int n,int m)
     for(int i=0;i<n;i++)
     {
         start=max(start,arr[i]);
-        end=arr[i]+end;
+        end+=arr[i];
     }
     
 
