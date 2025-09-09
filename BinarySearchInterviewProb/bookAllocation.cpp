@@ -37,7 +37,7 @@ int book(int arr[],int n,int m)
         }
         else
         {
-            start=end+1;
+            start=mid+1;
         }
     }
     return ans;
