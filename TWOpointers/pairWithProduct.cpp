@@ -1,21 +1,21 @@
 #include<iostream>
 using namespace std;
-int pairdifference(int arr[],int n,int target)
+int pairproduct(int arr[],int n,int target)
 {
-    int start=0,end=1;
-    while(end<n)
+    int start=0,end=n-1;
+    while(start<end)
     {
-        if(arr[end]-arr[start]==target)
+        if(arr[end]*arr[start]==target)
         {
             return 1;
         }
-        else if(arr[end]-arr[start]<target)
+        else if(arr[end]*arr[start]<target)
         {
-            end++;
+            start++;
         }
         else
         {
-            start++;
+            end--;
         }
         return 0;
     }
@@ -34,5 +34,5 @@ int main()
     {
         cin>>arr[i];
     }
-    cout<<pairdifference;
+    cout<<pairproduct;
 }
