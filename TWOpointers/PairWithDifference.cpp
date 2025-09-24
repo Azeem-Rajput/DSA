@@ -5,11 +5,11 @@ int pairdifference(int arr[],int n,int target)
     int start=0,end=1;
     while(end<n)
     {
-        if(arr[start]+arr[end]==target)
+        if(arr[start]-arr[end]==target)
         {
             return 1;
         }
-        else if(arr[start]+arr[end]<target)
+        else if(arr[start]-arr[end]<target)
         {
             end++;
         }
