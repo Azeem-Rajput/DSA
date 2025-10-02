@@ -24,6 +24,6 @@ int main()
     {
         cin>>arr[i];
     }
-    cout<<MaxBT(n,arr);
+    cout<<MaxBT(n, arr);
 
 }
