@@ -7,7 +7,7 @@ int MaxBT(int n,int arr[])
     int suffix=arr[n-1];
     for(int i=n-2;i>=0;i--)
     {
-        ans=max(ans,arr[i]-suffix);
+        ans=max(ans,suffix-arr[i]);
         suffix=max(suffix,arr[i]);
     }
     return ans;
