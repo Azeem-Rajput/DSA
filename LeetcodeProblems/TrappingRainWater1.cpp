@@ -25,6 +25,7 @@ int TrappingRain(int n,int arr[])
         }
     }
     return water;
+    
 }
 int main()
 {
