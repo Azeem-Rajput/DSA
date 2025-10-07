@@ -1,8 +1,15 @@
 #include<iostream>
+#include<vector>
 using namespace std;
 int TrappingRain(int n,int arr[])
 {
-    
+    vector<int>arr;
+    int leftmax[n],rightmax[n];
+    leftmax[0]=0;
+    for(int i=1;i<n;i++)
+    {
+        leftmax[i]=max(leftmax)
+    }
 }
 int main()
 {
