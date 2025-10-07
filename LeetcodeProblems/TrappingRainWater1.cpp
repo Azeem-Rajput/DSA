@@ -8,7 +8,7 @@ int TrappingRain(int n,int arr[])
     leftmax[0]=0;
     for(int i=1;i<n;i++)
     {
-        leftmax[i]=max(leftmax)
+        leftmax[i]=max(leftmax[i-1],rightmax[i-1]);
     }
 }
 int main()
