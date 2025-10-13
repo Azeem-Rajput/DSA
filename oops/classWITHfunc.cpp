@@ -16,13 +16,28 @@ class student
     {
         age=x;
     }
+      void setgrade(string g)
+    {
+        grade=g;
+    }
     void prname()
     {
-        cout<<name;
+        cout<<name<<endl;
     }
     void prage()
     {
-        cout<<age;
+        cout<<age<<endl;
+    }
+    void prgrade(int pin)
+    {
+        if(pin==123)
+        {
+            cout<<grade<<endl;
+        } 
+        else
+        {
+            cout<<"please enter valid pin";
+        }
     }
 };
 int main()
@@ -30,7 +45,9 @@ int main()
     student s1;
     s1.setname("Azeem");
     s1.setage(10);
+    s1.setgrade("A+");
     s1.prname();
     s1.prage();
+    s1.prgrade(3);
 
 }
