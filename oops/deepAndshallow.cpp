@@ -37,4 +37,7 @@ int main()
     customer A2(A1);
     A1.print();
     A2.print();
+    A1.update();
+    A1.print();`
+    A2.print();
 }
