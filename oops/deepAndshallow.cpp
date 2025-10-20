@@ -13,7 +13,15 @@ class customer
         p=new int;
         p=0;
     }
+    //deep copy //user copy constructor
+    customer(customer &B)
+    {
+        a=B.a;
+        p=new int;
+        *p=*(B.p);
+    }
 
+    //shallow copy
     customer(int x,int y)
     {
         a=x;
@@ -38,6 +46,6 @@ int main()
     A1.print();
     A2.print();
     A1.update();
-    A1.print();`
+    A1.print();
     A2.print();
 }
