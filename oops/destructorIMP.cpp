@@ -18,6 +18,7 @@ class customer
     //destructor
     ~customer()
     {
+        delete data;
         cout<<"destructor is present";
     }
 };
