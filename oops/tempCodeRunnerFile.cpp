@@ -1,1 +1,2 @@
-A1.updateage(24);
+azeem.a=12;
+    // azeem.b=12;
