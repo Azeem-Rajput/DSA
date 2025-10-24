@@ -7,6 +7,12 @@ class human
 
     protected:
     int b;
+    void fun()
+    {
+        a=2;
+        b=20;
+        c=21;
+    }
 
     public:
     int c;
