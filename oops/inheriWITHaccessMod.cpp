@@ -4,7 +4,7 @@ using namespace std;
 class human
 {
     string relegion,color;
-    protected:
+    public:
     string name;
     int age,weight;
 };
@@ -28,9 +28,16 @@ class student:private human //protected or public
         cout<<"The name is="<<name<<" ,the age is="<<age<<" ,the weight is="<<weight<<" ,roll number is="<<rollno<<" & the fee is="<<fee<<endl;
     }
 };
+
+class teacher:public human
+{
+    int salary,id;
+};
 int main()
 {
     student azeem("Rjput",10,30,24,2000);
     azeem.prnt();
+    teacher A1;
+    A1.name="aar";
     
 }
