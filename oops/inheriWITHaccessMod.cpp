@@ -22,6 +22,7 @@ class student:private human //protected or public
        this->weight=weight;
        this->rollno=rollno;
        this->fee=fee;
+
     }
     void prnt()
     {
