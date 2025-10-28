@@ -8,7 +8,7 @@ class person
     int age;
 
     public:
-    void display()
+    void per()
     {
         cout<<"person class works with name & age="<<name<<" "<<age<<endl;
     }
@@ -20,16 +20,16 @@ class employee:public person
     int salary;
 
     public:
-    void display()
+    void emp()
     {
     cout<<"employe class works with salary="<<salary<<endl;
     }
 };
 class manager:public employee
 {
-    protected:
+    public:
     string dep;
-    
+
     public:
     manager(string name,int age,int salary, string dep)
     {
@@ -42,6 +42,11 @@ class manager:public employee
     void print_manage()
     {
         cout<<name<<" "<<age<<" "<<salary<<" "<<dep<<endl;
+    }
+
+    void man()
+    {
+        cout<<"manager class is working and his departement is="<<dep<<endl;
     }
 };
 
