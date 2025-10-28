@@ -7,12 +7,12 @@ class person
     int name,age;
 };
 
-class employee
+class employee:public person
 {
     protected:
     int salary;
 };
-class manager
+class manager:public employee
 {
     protected:
     string dep;
