@@ -21,7 +21,8 @@ class youtuber
         cout<<"My youtube subscribers are "<<subscribers<<endl;
     }
 };
-class gamer:public engineer,public youtuber
+class gamer:public engineer,public youtuber// As we know,constructor call as engineer-> youtuber-> gamer
+// class gamer:public youtuber,public engineer  ( but inthis sequence the constructor calls as youtuber-> engineer-> gamer) 
 {
     public:
     string game;
