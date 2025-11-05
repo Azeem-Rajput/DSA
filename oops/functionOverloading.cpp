@@ -19,4 +19,5 @@ int main()
     area A1;
     cout<<A1.calculateArea(2)<<endl;
     cout<<A1.calculateArea(2,2);
+    // cout<<A1.calculateArea("azeem");
 }
