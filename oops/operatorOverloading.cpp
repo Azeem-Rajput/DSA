@@ -16,8 +16,9 @@ class complex
     }
     complex operator+(complex &C)
     {
-        
+
     }
+    
 };
 
 int main()
