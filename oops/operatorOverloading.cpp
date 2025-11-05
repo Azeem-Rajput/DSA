@@ -5,6 +5,10 @@ class complex
 {
     int real,img;
     public:
+    complex()
+    {
+
+    }
     complex(int real,int img)
     {
         this->real=real;
@@ -12,19 +16,22 @@ class complex
     }
     void display()
     {
-        cout<<real<<" +i"<<img;
+        cout<<real<<" -i"<<img;
     }
-    complex operator+(complex &C)
+    complex operator -(complex &C)
     {
-
+        complex ans;
+        ans.real=real-C.real;
+        ans.img=img-C.img; 
+        return ans;
     }
-    
+
 };
 
 int main()
 {
     complex C1(2,2);
     complex C2(2,2);
-    complex C3=C1+C2;
+    complex C3=C1-C2;
     C3.display();
 }
