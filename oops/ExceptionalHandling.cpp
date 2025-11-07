@@ -1,22 +1,39 @@
 #include<iostream>
 using namespace std;
-class exception
+// class exception
+// {
+//     protected:
+//     string msg;
+
+//     public:
+//     exception(string msg)
+//     {
+//         this->msg=msg;
+//     }
+//     string what()
+//     {
+//         return msg;
+//     }
+// };
+
+// class runtime_error : public exception
+// {
+//     public:
+//     runtime_error(const string &msg):exception(msg);
+// };
+
+class invalidAmount:public runtime_error
 {
-    protected:
-    string msg;
-
     public:
-    exception(string msg)
-    {
-        this->msg=msg;
-    }
-    string what()
-    {
-        return msg;
-    }
+    invalidAmount(const string &msg):runtime_error(msg)
+    {};
 };
-
-
+class insufficientBal:public runtime_error
+{
+    public:
+    insufficientBal(const string &msg):runtime_error(msg)
+    {};
+};
 
 class customer
 {
@@ -34,7 +51,7 @@ class customer
     void debit(int amount)
     {
         if(amount<=0)
-            throw runtime_error ("amount should greater than 0\n");
+            throw invalidAmount ("amount should greater than 0\n");
       
             balence+=amount;
             cout<<amount<<" is depit successfully"<<endl;
@@ -49,11 +66,11 @@ class customer
         }
         else if(amount<0)
         {
-            throw runtime_error ("your should greater than zero\n");
+            throw invalidAmount("your should greater than zero\n");
         }
         else
         {
-            throw  runtime_error ("your present balence is low tha)n amount\n");
+            throw  insufficientBal("your present balence is low than amount\n");
         }
     }
 };
@@ -63,13 +80,20 @@ int main()
     customer A1("azeem",5000,232);
     try
     {
-    A1.debit(1000); 
-    A1.debit(0);
-    A1.withdraw(6100);                              // exception
-    A1.debit(1000);
+    A1.debit(1000);  
+    A1.withdraw(7000);                              // exception
+    A1.debit(100);
     }
     catch(const runtime_error &e)
     {
-        cout<<"Exception Occur "<<e.what()<<endl;
+        cout<<"Exception Occur "<<e.what()<<endl;       // These custom function only made for easibility to read
+    }
+    catch(const insufficientBal &e)
+    {
+        cout<<"Exception Occur: "<<e.what()<<endl;
+    }
+    catch(...)
+    {
+        cout<<"Exception occur"<<endl;
     }
 }
