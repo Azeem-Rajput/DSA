@@ -1,5 +1,22 @@
 #include<iostream>
 using namespace std;
+class exception
+{
+    protected:
+    string msg;
+
+    public:
+    exception(string msg)
+    {
+        this->msg=msg;
+    }
+    string what()
+    {
+        return msg;
+    }
+};
+
+
 
 class customer
 {
@@ -17,7 +34,7 @@ class customer
     void debit(int amount)
     {
         if(amount<=0)
-            throw "amount should greater than 0\n";
+            throw runtime_error ("amount should greater than 0\n");
       
             balence+=amount;
             cout<<amount<<" is depit successfully"<<endl;
@@ -32,11 +49,11 @@ class customer
         }
         else if(amount<0)
         {
-            throw "your should greater than zero\n";
+            throw runtime_error ("your should greater than zero\n");
         }
         else
         {
-            throw  "your present balence is low than amount\n";
+            throw  runtime_error ("your present balence is low tha)n amount\n");
         }
     }
 };
@@ -51,8 +68,8 @@ int main()
     A1.withdraw(6100);                              // exception
     A1.debit(1000);
     }
-    catch(const char *e)
+    catch(const runtime_error &e)
     {
-        cout<<"Exception Occur "<<e<<endl;
+        cout<<"Exception Occur "<<e.what()<<endl;
     }
 }

@@ -9,7 +9,7 @@ int main()
     cout<<"Memory allocated completed"<<endl;
     delete []p;
     }
-    catch(const exception &e)
+    catch(const bad_alloc &e)
     {
         cout<<"Exception Occur "<<e.what()<<endl;
     }
