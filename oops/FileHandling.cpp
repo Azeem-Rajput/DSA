@@ -9,5 +9,5 @@ int main()
     // Write krna
     fout<<"Hello Azeem";
 
-    fout.close();
+    fout.close();//  Resources release karwa paoo 
 }
