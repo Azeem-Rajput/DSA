@@ -85,11 +85,12 @@ int main()
     A1.withdraw(7000);                              // exception
     A1.debit(100);
     }
+    
     catch(const runtime_error &e)
     {
         cout<<"Exception Occur "<<e.what()<<endl;       // These custom function only made for easibility to read
     }
-    
+
     catch(const insufficientBal &e)
     {
         cout<<"Exception Occur: "<<e.what()<<endl;
