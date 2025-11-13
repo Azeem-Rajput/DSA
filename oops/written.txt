@@ -1,0 +1,4 @@
+Original Data
+298 28 46 10 2 
+Sorted Data
+2 10 28 46 298  
