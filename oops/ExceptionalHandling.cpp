@@ -89,11 +89,12 @@ int main()
     {
         cout<<"Exception Occur "<<e.what()<<endl;       // These custom function only made for easibility to read
     }
+    
     catch(const insufficientBal &e)
     {
         cout<<"Exception Occur: "<<e.what()<<endl;
     }
-    
+
     catch(...)
     {
         cout<<"Exception occur"<<endl;
