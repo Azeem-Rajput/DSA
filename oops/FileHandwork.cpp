@@ -21,6 +21,7 @@ int main()
     {
         fout<<arr[i]<<" ";
     }
+    
     ifstream fin;
 
     fin.open("task.txt");
