@@ -2,6 +2,7 @@
 using namespace std;
 void fn3(int n)
 {
+    // Base Case
     if(n==0)
     {
         cout<<"Happy Birthday"<<endl;
