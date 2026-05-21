@@ -35,6 +35,7 @@ void print(int N)
     cout<<N<<" ";
 }
 
+
 int main()
 {
     int n;
