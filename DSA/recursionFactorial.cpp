@@ -11,5 +11,9 @@ int fact(int N)
 int main()
 {
     int n=0;
+    if(n<0)
+    {
+        cout<<"Factorial not exist";
+    }
     cout<<fact(n);
 }
