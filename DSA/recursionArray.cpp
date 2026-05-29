@@ -13,6 +13,7 @@ void p(int arr[],int index,int n)
 }
 int main()
 {
+    
     int arr[]={3,7,6,2,8};
     p(arr,0,5);
     
