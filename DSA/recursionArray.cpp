@@ -11,6 +11,7 @@ void p(int arr[],int index,int n)
     cout<<arr[index]<<" ";
     
 }
+
 int main()
 {
     
