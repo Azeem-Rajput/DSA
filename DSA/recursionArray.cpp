@@ -12,6 +12,7 @@ void p(int arr[],int index,int n)
     
 }
 
+
 int main()
 {
     
