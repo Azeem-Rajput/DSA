@@ -1,5 +1,6 @@
 #include<iostream>
 using namespace std;
+
 void p(int arr[],int index,int n)
 {
     //break case
