@@ -2,13 +2,17 @@
 using namespace std;
 int print(int arr[],int n,int index,int sum)
 {
-    if(sum==0)
+    // if(sum==0)
+    // {
+    //     return 1 ;
+    // }
+    // if(index==n || sum<0)
+    // {
+    //     return 0;
+    // }
+    if(index==n)
     {
-        return 1 ;
-    }
-    if(index==n || sum<0)
-    {
-        return 0;
+        return sum==0;
     }
     return print(arr,n,index+1,sum)+print(arr,n,index+1,sum-arr[index]);
     
@@ -16,6 +20,6 @@ int print(int arr[],int n,int index,int sum)
 int main()
 {
     int arr[]={5,2,3,6,10,8};
-    cout<<print(arr,6,0,10);
+    cout<<print(arr,6,0,7);
     
 }
