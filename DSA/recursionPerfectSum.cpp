@@ -10,6 +10,7 @@ int print(int arr[],int n,int index,int sum)
     // {
     //     return 0;
     // }
+    
     if(index==n)
     {
         return sum==0;
