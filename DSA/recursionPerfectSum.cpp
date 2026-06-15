@@ -2,6 +2,7 @@
 using namespace std;
 int print(int arr[],int n,int index,int sum)
 {
+    
     // if(sum==0)
     // {
     //     return 1 ;
