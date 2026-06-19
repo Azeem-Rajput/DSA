@@ -17,9 +17,8 @@ int main()
 // insert node at end
 {
     int arr[]={2,4,6,8,10};
-    Node*Head;
-    Head=NULL;
-    Node*tail=NULL;
+    Node*Head,*tail;
+    tail=Head=NULL;
 
     //linked list not present
     for(int i=0;i<5;i++)
@@ -42,10 +41,10 @@ int main()
 
 
   // print
-//   Node*temp2=Head;
-//   while(temp2)// or while(temp!=NULL)
-//   {
-//     cout<<temp->data<<" ";
-//     temp=temp->next;
-// }
+  Node*temp2=Head;
+  while(temp2)// or while(temp!=NULL)
+  {
+    cout<<temp2->data<<" ";
+    temp2=temp2->next;
+}
 }
