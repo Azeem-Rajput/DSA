@@ -36,12 +36,39 @@ int main()
     int arr[]={2,4,6};
     Head=CreateLinkedList(arr,0,3);
 
-    // deleten node
+    // delete first node
+
+    // if(Head!=NULL)
+    // {
+    //   Node*temp=Head;
+    //   Head=Head->next;
+    //   delete temp;
+    // }
+
+    // delete last node
     if(Head!=NULL)
     {
-      Node*temp=Head;
-      Head=Head->next;
-      delete temp;
+        // only one node present
+        if(Head->next==NULL)
+        {
+            Node*temp=Head;
+            Head=NULL;
+            delete temp;
+        }
+        // more than 1 node present
+        else
+        {
+            Node*curr=Head;
+            Node*prev=NULL;
+            // curr->next not a null
+            while(curr->next!=NULL)
+            {
+                prev=curr;
+                curr=curr->next;   
+            }
+            delete curr;
+            prev->next=NULL;
+        }
     }
 
   Node*temp2=Head;
