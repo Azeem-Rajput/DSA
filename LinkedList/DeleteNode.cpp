@@ -29,7 +29,7 @@ Node* CreateLinkedList(int arr[],int index,int size)
 }
 int main()
 
-// insert node at end
+// insert node at end   
 {
     Node*Head;
     Head=NULL;
