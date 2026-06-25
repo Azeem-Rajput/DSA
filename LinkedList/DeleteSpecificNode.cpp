@@ -58,24 +58,6 @@ int main()
 
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
     // print
       Node*temp2=Head;
   while(temp2)// or while(temp!=NULL)
