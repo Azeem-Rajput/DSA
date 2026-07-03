@@ -20,7 +20,8 @@ Node*createDLL(int arr[],int index,int size,Node*back)
         return NULL;
     }
     Node*temp=new Node(arr[index]);
-    temp->next=createDLL(arr,index+1,size,temp);
+    temp->next=back;
+    temp->prev=createDLL(arr,index+1,size,temp);
     return temp;
 }
 int main()
