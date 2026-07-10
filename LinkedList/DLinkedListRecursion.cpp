@@ -26,6 +26,7 @@ Node*createDLL(int arr[],int index,int size,Node*back)
     temp->prev=createDLL(arr,index+1,size,temp);
     return temp;
 }
+
 int main()
 {
     Node*head=NULL;
