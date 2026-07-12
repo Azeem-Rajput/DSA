@@ -27,6 +27,7 @@ Node*createDLL(int arr[],int index,int size,Node*back)
     return temp;
 }
 
+
 int main()
 {
     Node*head=NULL;
