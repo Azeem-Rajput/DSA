@@ -17,6 +17,7 @@ using namespace std;
 
 Node*createDLL(int arr[],int index,int size,Node*back)
 {
+    
     if(index==size)
     {
         return NULL;
