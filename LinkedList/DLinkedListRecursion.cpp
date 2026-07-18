@@ -12,6 +12,7 @@ using namespace std;
         next=NULL;
         prev=NULL;
     }
+    
 };
 
 
