@@ -45,4 +45,5 @@ int main()
        cout<<print->data<<" ";
        print=print->next;
     }
+
 }
