@@ -50,7 +50,6 @@ class stack
         if(top==-1)
         {
             cout<<"stack underflow"<<endl;
-            cout<<top<<endl;
         }
         else
         {
