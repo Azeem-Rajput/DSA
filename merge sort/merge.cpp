@@ -43,7 +43,7 @@ void merge(int arr[],int start,int mid,int end)
 };
 void mergeSort(int arr[],int start,int end)
 {
-    if(start>=end)
+    if(start==end)
     {
         return;
     }
