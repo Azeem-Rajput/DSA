@@ -63,9 +63,10 @@ void levelorder(Node*root)
 {
     queue<Node*>q;
     q.push(root);
-    q.push(NULL);    // for next line
+    q.push(NULL);    // for a next line(next level)
     while(q.size()>0)
     {
+
         Node*curr=q.front();
         q.pop();
         if(curr==NULL)
@@ -94,6 +95,7 @@ void levelorder(Node*root)
     }
     cout<<endl;
 }
+
 int main()
 {
     vector<int>preorder={1,2,-1,-1,3,4,-1,-1,5,-1,-1};
